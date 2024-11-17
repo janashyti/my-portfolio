@@ -7,11 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Designer | Jana's Portfolio</title>
     <link rel="stylesheet" href="index.css">
-    <!-- Font Awesome for GitHub and LinkedIn icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
-        /* Banner styles */
         .banner {
             background-color: #222;
             padding: 100px 0;
@@ -27,7 +25,7 @@
 
         .banner h1 {
             font-size: 40px;
-            color: #ffffff; /* Pinkish */
+            color: #ffffff; 
             font-weight: bold;
             margin-bottom: 20px;
         }
@@ -87,8 +85,7 @@
                 <li><a href="resume.html">Resume</a></li>
                 <!-- GitHub Icon -->
                 <li><a href="https://github.com/janashyti" target="_blank" class="github-link"><i class="fab fa-github"></i></a></li>
-                <!-- LinkedIn Icon -->
-                <li><a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank" class="linkedin-link"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/jana-shyti-b53763264" target="_blank" class="linkedin-link"><i class="fab fa-linkedin"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -104,35 +101,85 @@
         </div>
     </section>
 
+
+
+
+
     <!-- Designer Section -->
+    
+    
     <section id="graphic-design" class="designer">
         <div class="container">
             <h2>My Graphic Design Projects</h2>
-            <p>Explore my graphic design work below:</p>
-
-            <div class="designer-projects">
+            <p>Explore my graphic design work below. Click on the images or PDFs to view more details.</p>
+    
+            <!-- Grid layout for projects -->
+            <div class="project-grid">
                 <!-- Project 1 -->
-                <div class="designer-project">
-                    <img src="assets/graphic-design1.jpg" alt="Graphic Design Project 1">
-                    <div class="project-info">
+                <div class="project-card">
+                    <img src="project4.jpg" alt="Graphic Design Project 1" class="project-img">
+                    <div class="project-overlay">
                         <h3>Project Title 1</h3>
-                        <p>Description of the design project goes here. This could include the tools you used, the style, and any challenges or highlights.</p>
-                        <a href="project1-details.html" class="btn">View Project</a>
+                        <p>This design was created using Adobe Illustrator and Photoshop. It features a modern style with clean lines and vibrant colors.</p>
+                        <a href="project4.jpg" target="_blank" class="btn">View JPG</a>
                     </div>
                 </div>
-
+    
                 <!-- Project 2 -->
-                <div class="designer-project">
-                    <img src="assets/graphic-design2.jpg" alt="Graphic Design Project 2">
-                    <div class="project-info">
+                <div class="project-card">
+                    <img src="image1.png" alt="Graphic Design Project 2" class="project-img" >
+                    <div class="project-overlay">
                         <h3>Project Title 2</h3>
-                        <p>Description of the design project goes here. This could include the tools you used, the style, and any challenges or highlights.</p>
-                        <a href="project2-details.html" class="btn">View Project</a>
+                        <p>A branding project for a tech startup, utilizing minimalistic design principles. This project involved creating a logo, color palette, and marketing materials.</p>
+                        <a href="Project 1.pdf" target="_blank" class="btn">View PDF</a>
+                    </div>
+                </div>
+    
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="image.png" alt="Graphic Design Project 3" class="project-img">
+                    <div class="project-overlay">
+                        <h3>Project Title 3</h3>
+                        <p>This packaging design was created for a product launch, focusing on innovative visuals and practical usability for the end customer.</p>
+                        <a href="Project 2.pdf" target="_blank" class="btn">View PDF</a>
+                    </div>
+                </div>
+    
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <img src="Capture2.jpg" alt="Graphic Design Project 4" class="project-img">
+                    <div class="project-overlay">
+                        <h3>Project Title 4</h3>
+                        <p>A creative illustration project showcasing dynamic compositions and an eye-catching color palette. Designed for a client in the entertainment industry.</p>
+                        <a href="Project 3.pdf" target="_blank" class="btn">View PDF</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- Lightbox for PDFs -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <iframe id="lightbox-content" src="" width="100%" height="600" frameborder="0"></iframe>
+    </div>
+
+    
+<script>
+    // Open Lightbox for PDF preview
+function openLightbox(pdfUrl) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("lightbox-content").src = pdfUrl;
+}
+
+// Close the lightbox
+function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+    document.getElementById("lightbox-content").src = ""; // Clear iframe on close
+}
+</script>
+
+
 
     <!-- Web Design Section -->
     <section id="web-design" class="designer">

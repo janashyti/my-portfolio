@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Full-Stack Web Developer Portfolio of Jana, showcasing development projects.">
     <title>Developer | Jana's Portfolio</title>
-    <link rel="stylesheet" href="index.css"> <!-- Link to your main stylesheet -->
-    <!-- Font Awesome for GitHub and LinkedIn icons -->
+    <link rel="stylesheet" href="index.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <style>
@@ -149,29 +148,57 @@
         </div>
     </section>
 
+
+
+
+
     <!-- Web Developer Section -->
     <section class="web-developer" id="projects">
         <div class="container">
             <h1>My Full-Stack Web Development Projects</h1>
-            <p>Here are two of my projects that I built as a full-stack web developer. Check them out below:</p>
-
+            <br>
             <div class="projects">
                 <!-- Project 1 -->
                 <div class="project">
-                    <h2>Personal Blog</h2>
-                    <p>This is a fully responsive personal blog created with HTML, CSS, and JavaScript. It features a clean layout and a smooth user experience.</p>
-                    <a href="https://example.com/project1" target="_blank" class="btn">View Project</a>
+                    <div class="project-thumbnail">
+                        <iframe src="https://nice-pebble-0c1e97b0f.5.azurestaticapps.net" width="100%" height="300" frameborder="0"></iframe>
+                    </div>
+                    <div class="project-details">
+                        <h2>The Recruit Zone</h2>
+                        <p>A responsive personal blog built with HTML, CSS, and JavaScript. Features a clean layout and smooth user experience.</p>
+                        <div class="buttons">
+                            <a href="https://nice-pebble-0c1e97b0f.5.azurestaticapps.net" target="_blank" class="btn">View Project</a>
+                        </div>
+                    </div>
                 </div>
-
+    
                 <!-- Project 2 -->
                 <div class="project">
-                    <h2>E-Commerce Store</h2>
-                    <p>A modern e-commerce site built with React and Node.js, featuring product listings, user authentication, and secure checkout.</p>
-                    <a href="https://example.com/project2" target="_blank" class="btn">View Project</a>
+                    <div class="project-thumbnail">
+                        <iframe src="https://ambitious-field-03fdf990f.4.azurestaticapps.net" width="100%" height="300" frameborder="0"></iframe>
+                    </div>
+                    <div class="project-details">
+                        <h2>Study Buddy</h2>
+                        <p>An e-commerce site built with React and Node.js, featuring product listings, user authentication, and secure checkout.</p>
+                        <div class="buttons">
+                            <a href="https://ambitious-field-03fdf990f.4.azurestaticapps.net" target="_blank" class="btn">View Project</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- Lightbox for project preview -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <iframe id="lightbox-content" src="" width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    
+
+    
+
+
 
     <!-- Footer -->
     <footer>
