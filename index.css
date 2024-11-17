@@ -454,3 +454,142 @@ footer {
 .project-info .btn:hover {
     background-color: #8e44ad;
 }
+
+
+
+
+
+/* programmer */
+
+
+/* List of assignments */
+.assignments-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.assignments-list li {
+    width: 100%;
+    max-width: 320px;  /* Limit button width */
+    display: flex;
+    justify-content: center;
+}
+
+/* Stylish buttons for the links */
+.btn {
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(135deg, #ff4081, #6a1b9a);  /* Gradient background */
+    padding: 18px 35px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    z-index: 1; /* Ensure text stays above background overlay */
+}
+
+/* Create a background overlay effect */
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* No overlay initially */
+    transition: all 0.4s ease;
+    z-index: -1; /* Keep behind the text */
+}
+
+/* Hover effects - darken background */
+.btn:hover::before {
+    background-color: rgba(0, 0, 0, 0.3); /* Darken the background when hovered */
+}
+
+/* Hover effects - purple text */
+.btn:hover {
+    color: #c992ec; /* Text color becomes purple */
+    box-shadow: 0 0 20px rgba(191, 133, 227, 0.7); /* Glowing purple border */
+    transform: scale(1.05); /* Slightly increase size */
+}
+
+/* Focus effect for accessibility */
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(155, 77, 202, 0.7); /* Purple focus outline */
+}
+
+/* Footer section (optional) */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #222;
+}
+
+footer p {
+    color: #aaa;
+    font-size: 1rem;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 3rem;
+    }
+
+    .banner p {
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+
+    .assignments-list {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .btn {
+        font-size: 0.95rem;
+        padding: 10px 20px;
+    }
+}
+  
+
+
+
+
+
+  /* Layout for the assignments section */
+.programmer {
+    padding: 20px;
+}
+
+/* Grid layout for assignment buttons (3 columns) */
+.assignments-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;  /* Space between items */
+    list-style-type: none;
+    padding: 20;
+    margin: 30;
+    margin-left: 55px;
+}
+
