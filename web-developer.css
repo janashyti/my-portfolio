@@ -1,0 +1,172 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #000;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8e44ad; /* Purple for logo */
+    text-decoration: none; /* Remove underline from the logo */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none; /* Remove underline from all navbar links */
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #f56ba0; /* Pinkish hover effect */
+}
+
+/* Web Developer Section */
+.web-developer {
+    padding: 60px 20px;
+    background-color: #000; /* Keep the black background */
+    text-align: center;
+}
+
+.web-developer h1 {
+    font-size: 40px;
+    color: #8e44ad; /* Purple color for the heading */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.web-developer p {
+    font-size: 20px;
+    color: #ccc; /* Light gray text for description */
+    margin-bottom: 40px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners for a cute effect */
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.project h2 {
+    font-size: 22px;
+    color: #8e44ad; /* Purple color for project title */
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 16px;
+    color: #ccc; /* Light gray for project descriptions */
+    margin-bottom: 20px;
+}
+
+.project .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8e44ad; /* Purple button */
+    color: white;
+    border-radius: 30px; /* Rounded button */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project .btn:hover {
+    background-color: #f56ba0; /* Pinkish hover effect */
+    transform: scale(1.1); /* Slight button enlarge on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 90%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar a.logo {
+        font-size: 20px;
+    }
+
+    .web-developer h1 {
+        font-size: 30px;
+    }
+
+    .web-developer p {
+        font-size: 18px;
+    }
+}

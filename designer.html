@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Designer | Jana's Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Font Awesome for GitHub and LinkedIn icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Banner styles */
+        .banner {
+            background-color: #222;
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .banner-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .banner h1 {
+            font-size: 40px;
+            color: #ffffff; /* Pinkish */
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #8e44ad;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #f56ba0;
+        }
+
+        /* Typing Effect */
+        .typing {
+            display: inline-block;
+            border-right: 3px solid #ffffff;
+            padding-right: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <!-- GitHub Icon -->
+                <li><a href="https://github.com/janashyti" target="_blank" class="github-link"><i class="fab fa-github"></i></a></li>
+                <!-- LinkedIn Icon -->
+                <li><a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank" class="linkedin-link"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h1><span id="typed-text" class="typing"></span></h1>
+
+            <!-- Two buttons for Graphic and Web Design -->
+            <a href="#graphic-design" class="btn">Graphic Design</a>
+            <a href="#web-design" class="btn">Web Design</a>
+        </div>
+    </section>
+
+    <!-- Designer Section -->
+    <section id="graphic-design" class="designer">
+        <div class="container">
+            <h2>My Graphic Design Projects</h2>
+            <p>Explore my graphic design work below:</p>
+
+            <div class="designer-projects">
+                <!-- Project 1 -->
+                <div class="designer-project">
+                    <img src="assets/graphic-design1.jpg" alt="Graphic Design Project 1">
+                    <div class="project-info">
+                        <h3>Project Title 1</h3>
+                        <p>Description of the design project goes here. This could include the tools you used, the style, and any challenges or highlights.</p>
+                        <a href="project1-details.html" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="designer-project">
+                    <img src="assets/graphic-design2.jpg" alt="Graphic Design Project 2">
+                    <div class="project-info">
+                        <h3>Project Title 2</h3>
+                        <p>Description of the design project goes here. This could include the tools you used, the style, and any challenges or highlights.</p>
+                        <a href="project2-details.html" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Web Design Section -->
+    <section id="web-design" class="designer">
+        <div class="container">
+            <h2>My Web Design Projects</h2>
+            <p>Explore my web design work below:</p>
+
+            <div class="designer-projects">
+                <!-- Project 1 -->
+                <div class="designer-project">
+                    <img src="assets/web-design1.jpg" alt="Web Design Project 1">
+                    <div class="project-info">
+                        <h3>Project Title 1</h3>
+                        <p>Description of the web design project goes here. Briefly describe the website, its purpose, and the design choices you made.</p>
+                        <a href="project1-details.html" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="designer-project">
+                    <img src="assets/web-design2.jpg" alt="Web Design Project 2">
+                    <div class="project-info">
+                        <h3>Project Title 2</h3>
+                        <p>This is where you can write a brief description of the second web design project. Talk about the tools you used, the site's function, and its design.</p>
+                        <a href="project2-details.html" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Jana. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Typing Effect for the Banner Text
+        const typedText = document.getElementById('typed-text');
+        const text = "I'm a Graphic & Web Designer";
+        let index = 0;
+
+        function typeText() {
+            if (index < text.length) {
+                typedText.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeText, 100);  // Adjust typing speed here
+            }
+        }
+
+        // Call the typing effect function
+        window.onload = typeText;
+    </script>
+
+</body>
+
+</html>
