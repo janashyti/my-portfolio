@@ -595,7 +595,6 @@ footer p {
 
 
 
-
 /* Styling for the project section */
 .web-developer {
     padding: 50px 0;
@@ -702,7 +701,6 @@ footer p {
 
 
 /*graphic design */
-/* Grid layout for projects */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);  /* Two columns on larger screens */
@@ -802,4 +800,113 @@ footer p {
     .project-overlay p {
         font-size: 0.9rem;
     }
+}
+
+
+
+
+/* Web Design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.6); /* Black background */
+    color: #fff; /* White text for contrast */
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Web Design Section */
+#photo-web-design {
+    padding: 4rem 0;
+    background-color: #000; /* Black background */
+}
+
+#photo-web-design h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff; /* White text for contrast */
+}
+
+#photo-web-design p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #ddd; /* Light gray for description text */
+}
+
+.designer-projects {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Project Card */
+.designer-project {
+    background-color: #111; /* Darker background for the card */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-video {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.project-video video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-info {
+    padding: 2rem;
+    text-align: center;
+    color: #fff; /* White text for better readability */
+}
+
+.project-info h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ff6f61; /* Accent color for the title */
+}
+
+.project-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #ddd; /* Light gray for paragraph text */
+}
+
+.project-info .btn {
+    background-color: #ff6f61;
+    color: white;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.project-info .btn:hover {
+    background-color: #d84f44;
 }
